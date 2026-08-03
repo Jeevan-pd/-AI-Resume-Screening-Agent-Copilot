@@ -1,0 +1,166 @@
+[
+    {
+        "candidate_name": "Alex Rivera",
+        "email": "alex.rivera@example.com",
+        "phone": "+1 (555) 234-5678",
+        "overall_score": 79.77,
+        "recommendation": "Recommended",
+        "sub_scores": {
+            "skill_score": 61.17,
+            "experience_score": 96.0,
+            "education_score": 100.0,
+            "semantic_score": 76.67
+        },
+        "matching_skills": [
+            "aws",
+            "ci/cd",
+            "docker",
+            "fastapi",
+            "generative ai",
+            "git",
+            "kubernetes",
+            "langchain",
+            "llm",
+            "machine learning",
+            "microservices",
+            "numpy",
+            "pandas",
+            "pinecone",
+            "postgresql",
+            "prompt engineering",
+            "python",
+            "pytorch",
+            "rag",
+            "redis",
+            "scikit-learn"
+        ],
+        "missing_skills": [
+            "azure",
+            "chromadb",
+            "flask"
+        ],
+        "strengths": [
+            "Solid experience record (8.0 years vs 5.0 required).",
+            "High context and semantic correlation between resume project descriptions and target role.",
+            "Meets or exceeds target education credentials."
+        ],
+        "weaknesses": [
+            "Lacks key required skills: azure, chromadb, flask."
+        ],
+        "experience_summary": "Alex Rivera has approximately 8.0 years of relevant industry experience.",
+        "education_summary": "Education Background: MASTER, BACHELOR, ASSOCIATE."
+    },
+    {
+        "candidate_name": "Sophia Chen",
+        "email": "sophia.chen@example.com",
+        "phone": "+1 (555) 345-6789",
+        "overall_score": 67.8,
+        "recommendation": "Recommended",
+        "sub_scores": {
+            "skill_score": 52.99,
+            "experience_score": 72.0,
+            "education_score": 100.0,
+            "semantic_score": 66.71
+        },
+        "matching_skills": [
+            "azure",
+            "docker",
+            "fastapi",
+            "flask",
+            "git",
+            "mongodb",
+            "pandas",
+            "postgresql",
+            "python",
+            "react",
+            "scikit-learn",
+            "streamlit"
+        ],
+        "missing_skills": [
+            "aws",
+            "chromadb",
+            "ci/cd"
+        ],
+        "strengths": [
+            "Meets or exceeds target education credentials."
+        ],
+        "weaknesses": [
+            "Lacks key required skills: aws, chromadb, ci/cd."
+        ],
+        "experience_summary": "Sophia Chen has approximately 4.0 years of relevant industry experience.",
+        "education_summary": "Education Background: BACHELOR."
+    },
+    {
+        "candidate_name": "David Miller",
+        "email": "david.m@example.com",
+        "phone": "+1 (555) 456-7890",
+        "overall_score": 66.39,
+        "recommendation": "Recommended",
+        "sub_scores": {
+            "skill_score": 37.92,
+            "experience_score": 90.0,
+            "education_score": 100.0,
+            "semantic_score": 61.49
+        },
+        "matching_skills": [
+            "ci/cd",
+            "docker",
+            "flask",
+            "git",
+            "microservices",
+            "postgresql",
+            "python"
+        ],
+        "missing_skills": [
+            "aws",
+            "azure",
+            "chromadb",
+            "fastapi"
+        ],
+        "strengths": [
+            "Solid experience record (5.0 years vs 5.0 required).",
+            "Meets or exceeds target education credentials."
+        ],
+        "weaknesses": [
+            "Lacks key required skills: aws, azure, chromadb, fastapi."
+        ],
+        "experience_summary": "David Miller has approximately 5.0 years of relevant industry experience.",
+        "education_summary": "Education Background: BACHELOR."
+    },
+    {
+        "candidate_name": "Emily Watson",
+        "email": "emily.watson@example.com",
+        "phone": "+1 (555) 567-8901",
+        "overall_score": 31.25,
+        "recommendation": "Not Recommended",
+        "sub_scores": {
+            "skill_score": 1.82,
+            "experience_score": 30.0,
+            "education_score": 100.0,
+            "semantic_score": 43.51
+        },
+        "matching_skills": [
+            "pandas",
+            "python"
+        ],
+        "missing_skills": [
+            "aws",
+            "azure",
+            "chromadb",
+            "ci/cd",
+            "docker",
+            "fastapi",
+            "flask"
+        ],
+        "strengths": [
+            "Meets or exceeds target education credentials."
+        ],
+        "weaknesses": [
+            "Lacks key required skills: aws, azure, chromadb, ci/cd.",
+            "Experience gap (1.0 yrs vs 5.0 yrs requested).",
+            "Resume phrasing indicates potential gap in domain-specific terminology."
+        ],
+        "experience_summary": "Emily Watson has approximately 1.0 years of relevant industry experience.",
+        "education_summary": "Education Background: BACHELOR."
+    }
+]

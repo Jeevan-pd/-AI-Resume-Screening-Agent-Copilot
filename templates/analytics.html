@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}Recruitment Analytics - AI Resume Screening Agent{% endblock %}
+
+{% block content %}
+<h2 class="fw-bold mb-4"><i class="fa-solid fa-chart-pie text-primary me-2"></i> Recruitment Analytics & Insights</h2>
+
+{% if not results %}
+<div class="glass-card text-center py-5">
+    <i class="fa-solid fa-chart-line text-secondary display-3 mb-3"></i>
+    <h4 class="text-secondary">No analytics available yet.</h4>
+    <p class="text-secondary">Please screen candidates or click "Load Demo Data" in the navbar.</p>
+</div>
+{% else %}
+
+<div class="row g-4">
+    <!-- Chart 1: Candidate Scores -->
+    <div class="col-lg-6">
+        <div class="glass-card">
+            <h5 class="fw-bold mb-3">Candidate Overall Score Comparison</h5>
+            <canvas id="scoresBarChart" height="240"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart 2: Recommendation Pie -->
+    <div class="col-lg-6">
+        <div class="glass-card">
+            <h5 class="fw-bold mb-3">Recommendation Tier Distribution</h5>
+            <canvas id="tiersPieChart" height="240"></canvas>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const candidates = {{ chart_candidates | tojson }};
+    const scores = {{ chart_scores | tojson }};
+    const tiers = {{ chart_tiers | tojson }};
+
+    // Chart 1: Bar Chart
+    new Chart(document.getElementById('scoresBarChart'), {
+        type: 'bar',
+        data: {
+            labels: candidates,
+            datasets: [{
+                label: 'Overall Score (/100)',
+                data: scores,
+                backgroundColor: ['#10B981', '#3B82F6', '#F59E0B', '#EF4444'],
+                borderRadius: 8
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+                y: { beginAtZero: true, max: 100, ticks: { color: '#94A3B8' } },
+                x: { ticks: { color: '#94A3B8' } }
+            }
+        }
+    });
+
+    // Chart 2: Pie Chart
+    const tierCounts = {};
+    tiers.forEach(t => tierCounts[t] = (tierCounts[t] || 0) + 1);
+
+    new Chart(document.getElementById('tiersPieChart'), {
+        type: 'doughnut',
+        data: {
+            labels: Object.keys(tierCounts),
+            datasets: [{
+                data: Object.values(tierCounts),
+                backgroundColor: ['#10B981', '#3B82F6', '#F59E0B', '#EF4444']
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'bottom', labels: { color: '#F8FAFC' } }
+            }
+        }
+    });
+});
+</script>
+{% endif %}
+{% endblock %}
