@@ -1,0 +1,16 @@
+David Miller
+Email: david.m@example.com | Phone: +1 (555) 456-7890 | Austin, TX
+
+SUMMARY
+Software Engineer with 3 years of backend experience building Python APIs and microservices.
+
+EXPERIENCE
+Backend Engineer | CloudScale Systems (2021 - Present)
+- Developed RESTful APIs using Python, Django, and PostgreSQL.
+- Managed Git repositories and CI/CD pipelines using GitHub Actions.
+
+SKILLS
+Python, Django, Flask, SQL, PostgreSQL, REST APIs, Git, Docker, Linux.
+
+EDUCATION
+Bachelor of Arts in Information Technology | University of Texas at Austin (2021)

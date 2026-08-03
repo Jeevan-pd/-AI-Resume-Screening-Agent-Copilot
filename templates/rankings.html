@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}Candidate Rankings - AI Resume Screening Agent{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold m-0"><i class="fa-solid fa-trophy text-warning me-2"></i> Candidate Rankings Leaderboard</h2>
+    <div>
+        <a href="{{ url_for('export_csv') }}" class="btn btn-sm btn-secondary-custom me-2">
+            <i class="fa-solid fa-file-csv text-success me-1"></i> Export CSV
+        </a>
+        <a href="{{ url_for('export_json') }}" class="btn btn-sm btn-secondary-custom">
+            <i class="fa-solid fa-file-code text-info me-1"></i> Export JSON
+        </a>
+    </div>
+</div>
+
+{% if not results %}
+<div class="glass-card text-center py-5">
+    <i class="fa-solid fa-folder-open text-secondary display-3 mb-3"></i>
+    <h4 class="text-secondary">No candidates screened yet.</h4>
+    <p class="text-secondary">Please upload candidate resumes or click "Load Demo Data" in the navbar.</p>
+    <a href="{{ url_for('index') }}" class="btn btn-primary-custom mt-2">Go to Ingestion Setup</a>
+</div>
+{% else %}
+
+<!-- Metrics Header -->
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="metric-card">
+            <div class="metric-value">{{ results|length }}</div>
+            <div class="metric-label">Total Candidates</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="metric-card">
+            <div class="metric-value">{{ results[0].overall_score }}/100</div>
+            <div class="metric-label">Top Candidate Score</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="metric-card">
+            <div class="metric-value">{{ results | selectattr('recommendation', 'equalto', 'Highly Recommended') | list | length }}</div>
+            <div class="metric-label">Highly Recommended</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="metric-card">
+            <div class="metric-value">{{ (results | map(attribute='overall_score') | sum / results|length) | round(1) }}/100</div>
+            <div class="metric-label">Average Score</div>
+        </div>
+    </div>
+</div>
+
+<!-- Leaderboard Cards -->
+<div class="row g-3">
+    {% for r in results %}
+    <div class="col-12">
+        <div class="glass-card mb-0">
+            <div class="row align-items-center">
+                <div class="col-md-1 text-center">
+                    <h2 class="fw-bold text-secondary m-0">#{{ loop.index }}</h2>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-1">
+                        <a href="{{ url_for('candidate_detail', candidate_name=r.candidate_name) }}" class="text-white text-decoration-none">
+                            {{ r.candidate_name }}
+                        </a>
+                    </h4>
+                    <div class="small text-secondary"><i class="fa-solid fa-envelope me-1"></i> {{ r.email }}</div>
+                    <div class="small text-secondary"><i class="fa-solid fa-phone me-1"></i> {{ r.phone }}</div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="display-6 fw-bold text-primary">{{ r.overall_score }}</div>
+                    <div class="small text-secondary">Overall Score / 100</div>
+                </div>
+                <div class="col-md-2 text-center">
+                    {% if r.recommendation == 'Highly Recommended' %}
+                        <span class="badge-tier badge-highly-recommended">Highly Recommended</span>
+                    {% elif r.recommendation == 'Recommended' %}
+                        <span class="badge-tier badge-recommended">Recommended</span>
+                    {% elif r.recommendation == 'Consider' %}
+                        <span class="badge-tier badge-consider">Consider</span>
+                    {% else %}
+                        <span class="badge-tier badge-not-recommended">Not Recommended</span>
+                    {% endif %}
+                </div>
+                <div class="col-md-3">
+                    <div class="small text-secondary mb-1">Matched Skills:</div>
+                    {% for skill in r.matching_skills[:5] %}
+                        <span class="skill-chip-match">{{ skill }}</span>
+                    {% endfor %}
+                </div>
+                <div class="col-md-1 text-end">
+                    <a href="{{ url_for('candidate_detail', candidate_name=r.candidate_name) }}" class="btn btn-sm btn-outline-primary">
+                        Details <i class="fa-solid fa-chevron-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endif %}
+{% endblock %}
