@@ -1,0 +1,25 @@
+Alex Rivera
+Email: alex.rivera@example.com | Phone: +1 (555) 234-5678 | San Francisco, CA
+
+SUMMARY
+Senior AI Architect with 6.5 years of industry experience specializing in LLM deployment, RAG architectures, and scalable Python microservices on AWS.
+
+SKILLS
+Python, PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy, LangChain, LlamaIndex, LLM, RAG, Prompt Engineering, FastAPI, Docker, Kubernetes, AWS, PostgreSQL, Redis, Pinecone, Git, Microservices, CI/CD.
+
+EXPERIENCE
+Lead AI Engineer | TechCorp Inc. (2021 - Present)
+- Engineered scalable LLM RAG pipelines serving 500,000 daily active users using FastAPI, LangChain, and Pinecone vector database.
+- Orchestrated Docker container deployments on Kubernetes EKS clusters, reducing model inference latency by 35%.
+
+Machine Learning Engineer | DataVision LLC (2018 - 2021)
+- Built automated computer vision and NLP classification models using PyTorch and Scikit-Learn.
+- Streamlined data processing pipelines handling 10TB+ dataset using Pandas and SQL.
+
+EDUCATION
+Master of Science in Computer Science | Stanford University (2018)
+Bachelor of Science in Computer Engineering | UC Berkeley (2016)
+
+CERTIFICATIONS
+AWS Certified Solutions Architect – Associate
+DeepLearning.AI Generative AI & LLM Specialist
