@@ -1,0 +1,25 @@
+Job Title: Senior AI / Full Stack Engineer
+Location: Remote / Hybrid
+
+Role Overview:
+We are seeking an experienced Senior AI Engineer to join our core AI Innovation team. You will lead the architectural design, development, and deployment of production LLM applications, retrieval-augmented generation (RAG) pipelines, and intelligent agentic workflows.
+
+Required Technical Skills:
+- Python, PyTorch, Scikit-Learn, Pandas, NumPy
+- Large Language Models (LLM), Prompt Engineering, RAG, LangChain, LlamaIndex
+- FastAPI, Flask, Docker, Kubernetes, CI/CD pipelines
+- PostgreSQL, Redis, MongoDB, Vector Databases (Pinecone, ChromaDB)
+- Cloud Platforms: AWS, Azure, or GCP
+- System Architecture, RESTful APIs, Git, Microservices
+
+Experience Required:
+- 5+ years of software engineering and machine learning production experience.
+
+Education Required:
+- Bachelor's or Master's Degree in Computer Science, Artificial Intelligence, Data Science, or related engineering discipline.
+
+Responsibilities:
+- Build and scale production-grade generative AI applications and microservices.
+- Optimize model inference latency, vector similarity search, and semantic indexing.
+- Collaborate with cross-functional teams to integrate AI models into user-facing Streamlit/React web applications.
+- Implement robust unit testing, CI/CD automation, and monitoring pipelines.
