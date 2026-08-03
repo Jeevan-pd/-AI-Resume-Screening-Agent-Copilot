@@ -1,0 +1,203 @@
+[
+    {
+        "candidate_name": "Alex Rivera",
+        "email": "alex.rivera@example.com",
+        "phone": "+1 (555) 234-5678",
+        "overall_score": 83.73,
+        "recommendation": "Highly Recommended",
+        "sub_scores": {
+            "skill_score": 73.33,
+            "experience_score": 93.0,
+            "education_score": 100.0,
+            "semantic_score": 76.67
+        },
+        "matching_skills": [
+            "Python",
+            "PyTorch",
+            "Scikit-Learn",
+            "Pandas",
+            "NumPy",
+            "LangChain",
+            "LlamaIndex",
+            "RAG",
+            "Prompt Engineering",
+            "FastAPI",
+            "Docker",
+            "Kubernetes",
+            "PostgreSQL",
+            "Redis",
+            "Git",
+            "Microservices"
+        ],
+        "missing_skills": [
+            "Large Language Models (LLM)",
+            "Flask",
+            "CI/CD pipelines",
+            "MongoDB",
+            "Vector Databases (Pinecone, ChromaDB)",
+            "Cloud Platforms: AWS, Azure, or GCP",
+            "System Architecture",
+            "RESTful APIs"
+        ],
+        "strengths": [
+            "Solid experience record (6.5 years vs 5.0 required).",
+            "High context and semantic correlation between resume project descriptions and target role.",
+            "Meets or exceeds target education credentials."
+        ],
+        "weaknesses": [
+            "Lacks key required skills: Large Language Models (LLM), Flask, CI/CD pipelines, MongoDB."
+        ],
+        "experience_summary": "Alex Rivera has approximately 6.5 years of relevant industry experience.",
+        "education_summary": "Education Background: Master of Science in Computer Science, Computer Science, Stanford University, Bachelor of Science in Computer Engineering, Computer Engineering, UC Berkeley."
+    },
+    {
+        "candidate_name": "Sophia Chen",
+        "email": "sophia.chen@example.com",
+        "phone": "+1 (555) 345-6789",
+        "overall_score": 62.86,
+        "recommendation": "Consider",
+        "sub_scores": {
+            "skill_score": 50.0,
+            "experience_score": 72.0,
+            "education_score": 75.0,
+            "semantic_score": 66.71
+        },
+        "matching_skills": [
+            "Python",
+            "FastAPI",
+            "Flask",
+            "Scikit-Learn",
+            "Pandas",
+            "Docker",
+            "PostgreSQL",
+            "MongoDB",
+            "Git"
+        ],
+        "missing_skills": [
+            "PyTorch",
+            "NumPy",
+            "Large Language Models (LLM)",
+            "Prompt Engineering",
+            "RAG",
+            "LangChain",
+            "LlamaIndex",
+            "Kubernetes",
+            "CI/CD pipelines",
+            "Redis",
+            "Vector Databases (Pinecone, ChromaDB)",
+            "Cloud Platforms: AWS, Azure, or GCP",
+            "System Architecture",
+            "RESTful APIs",
+            "Microservices"
+        ],
+        "strengths": [
+            "Possesses foundational qualifications relevant to the role."
+        ],
+        "weaknesses": [
+            "Lacks key required skills: PyTorch, NumPy, Large Language Models (LLM), Prompt Engineering."
+        ],
+        "experience_summary": "Sophia Chen has approximately 4.0 years of relevant industry experience.",
+        "education_summary": "Education Background: Bachelor of Science in Data Science, Data Science, University of Washington."
+    },
+    {
+        "candidate_name": "David Miller",
+        "email": "david.m@example.com",
+        "phone": "+1 (555) 456-7890",
+        "overall_score": 51.34,
+        "recommendation": "Consider",
+        "sub_scores": {
+            "skill_score": 36.67,
+            "experience_score": 54.0,
+            "education_score": 75.0,
+            "semantic_score": 61.49
+        },
+        "matching_skills": [
+            "Python",
+            "Flask",
+            "PostgreSQL",
+            "Git",
+            "Docker"
+        ],
+        "missing_skills": [
+            "PyTorch",
+            "Scikit-Learn",
+            "Pandas",
+            "NumPy",
+            "Large Language Models (LLM)",
+            "Prompt Engineering",
+            "RAG",
+            "LangChain",
+            "LlamaIndex",
+            "FastAPI",
+            "Kubernetes",
+            "CI/CD pipelines",
+            "Redis",
+            "MongoDB",
+            "Vector Databases (Pinecone, ChromaDB)",
+            "Cloud Platforms: AWS, Azure, or GCP",
+            "System Architecture",
+            "RESTful APIs",
+            "Microservices"
+        ],
+        "strengths": [
+            "Possesses foundational qualifications relevant to the role."
+        ],
+        "weaknesses": [
+            "Lacks key required skills: PyTorch, Scikit-Learn, Pandas, NumPy.",
+            "Experience gap (3.0 yrs vs 5.0 yrs requested)."
+        ],
+        "experience_summary": "David Miller has approximately 3.0 years of relevant industry experience.",
+        "education_summary": "Education Background: Bachelor of Arts in Information Technology, Information Technology, University of Texas at Austin."
+    },
+    {
+        "candidate_name": "Emily Watson",
+        "email": "emily.watson@example.com",
+        "phone": "+1 (555) 567-8901",
+        "overall_score": 37.44,
+        "recommendation": "Not Recommended",
+        "sub_scores": {
+            "skill_score": 26.67,
+            "experience_score": 30.0,
+            "education_score": 75.0,
+            "semantic_score": 43.51
+        },
+        "matching_skills": [
+            "Python",
+            "Pandas"
+        ],
+        "missing_skills": [
+            "PyTorch",
+            "Scikit-Learn",
+            "NumPy",
+            "Large Language Models (LLM)",
+            "Prompt Engineering",
+            "RAG",
+            "LangChain",
+            "LlamaIndex",
+            "FastAPI",
+            "Flask",
+            "Docker",
+            "Kubernetes",
+            "CI/CD pipelines",
+            "PostgreSQL",
+            "Redis",
+            "MongoDB",
+            "Vector Databases (Pinecone, ChromaDB)",
+            "Cloud Platforms: AWS, Azure, or GCP",
+            "System Architecture",
+            "RESTful APIs",
+            "Git",
+            "Microservices"
+        ],
+        "strengths": [
+            "Possesses foundational qualifications relevant to the role."
+        ],
+        "weaknesses": [
+            "Lacks key required skills: PyTorch, Scikit-Learn, NumPy, Large Language Models (LLM).",
+            "Experience gap (1.0 yrs vs 5.0 yrs requested).",
+            "Resume phrasing indicates potential gap in domain-specific terminology."
+        ],
+        "experience_summary": "Emily Watson has approximately 1.0 years of relevant industry experience.",
+        "education_summary": "Education Background: Bachelor of Science in Mathematics, Mathematics, Boston University."
+    }
+]
